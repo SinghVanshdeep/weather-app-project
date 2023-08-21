@@ -1,0 +1,142 @@
+body {
+	background: linear-gradient(-45deg, #7be5fe, #fe7be5, #e5fe7b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#body-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#main{
+    height: 35rem;
+    width: 40rem;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+}
+
+#query{
+    height: 30%;
+    width: 100%;
+    background-color: #d67bfe;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 25rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: #d67bfe;
+}
+
+::placeholder{
+    color: #c2c2c2;
+}
+
+#result{
+    height: 70%;
+    width: 100%;
+    background-color: #d67bfe;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+img{
+    width: 8rem;
+}
+
+#temperature{
+    font-size: 3rem;
+}
+
+#boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-info{
+    height: 5rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    background-color: #470166;
+    text-align: center;
+}
+
+.more-info-text{
+    margin-top: 0.5rem;
+    color: #c2c2c2;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 768px){
+    #query{
+        width: 70%;
+        margin-left: 5rem;
+    }
+    #cityName{
+        width: 15rem;
+    }
+    button{
+        width: 5rem;
+    }
+    #result{
+        width: 70%;
+        margin-left: 5rem;
+    }
+    #icon{
+        width: 4rem;
+    }
+    #temperature{
+        font-size: 1.5rem;
+    }
+    #description{
+        font-size: 0.8rem;
+    }
+    .more-info{
+        width: 5rem;
+    }
+    .more-info-text{
+        font-size: 0.6rem;
+    }
+}
+
+
