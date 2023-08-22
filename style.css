@@ -110,13 +110,13 @@ img{
 @media only screen and (max-width: 768px){
     #query{
         width: 70%;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
     #cityName{
         width: 10rem;
         font-size: 0.8rem;
     }
-    
+
     .btn{
         font-size: 0.7rem;
     }
