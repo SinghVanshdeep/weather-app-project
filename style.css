@@ -113,10 +113,12 @@ img{
         margin-left: 5rem;
     }
     #cityName{
-        width: 15rem;
+        width: 10rem;
+        font-size: 0.8rem;
     }
-    button{
-        width: 5rem;
+    
+    .btn{
+        font-size: 0.7rem;
     }
     #result{
         width: 70%;
